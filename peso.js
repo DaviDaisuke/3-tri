@@ -1,3 +1,4 @@
+
 const form = document.querySelector("form")
 const resp = document.querySelector("h3")
 
@@ -15,9 +16,9 @@ form.addEventListener("submit",(e)=>{
         peso = 21* Math.pow(altura, 2)
     }
 
-    resp1.innerText= `${nome}seu peso ideal é: ${peso.toFixed(3)} kg`
+    resp.innerText= `${nome} seu peso ideal é: ${peso.toFixed(3)} kg`
 })
 
 form.addEventListener("reset", (e) => {
-    resp1.innerText = ""
+    resp.innerText = ""
 })
